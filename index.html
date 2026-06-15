@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historic Forts Of Maharashtra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏰 Historic Forts Of Maharashtra</h1>
+    <p>Explore the Pride of Maharashtra</p>
+</header>
+
+<div class="buttons">
+    <button onclick="filterForts('all')">All Forts</button>
+    <button onclick="filterForts('hill')">Hill Forts</button>
+    <button onclick="filterForts('sea')">Sea Forts</button>
+    <button onclick="filterForts('historical')">Historical Forts</button>
+</div>
+
+<div class="gallery">
+
+    <!-- Rajgad -->
+    <div class="card hill">
+        <img src="https://vl-prod-static.b-cdn.net/system/images/000/780/220/665460b6259a3b5cb595bca0e69a667f/original/Rajgad_Fort_in_Pune__Maharashtra.jpg" onclick="openPopup(this.src)">
+        <h3>Rajgad Fort</h3>
+        <p><b>District:</b> Pune</p>
+        <p>Capital of Chhatrapati Shivaji Maharaj for 26 years.</p>
+    </div>
+
+    <!-- Torna -->
+    <div class="card hill">
+        <img src="https://www.trawell.in/admin/images/upload/368986334Torna-Fort.jpg" onclick="openPopup(this.src)">
+        <h3>Torna Fort</h3>
+        <p><b>District:</b> Pune</p>
+        <p>First fort captured by Shivaji Maharaj.</p>
+    </div>
+
+    <!-- Sinhagad -->
+    <div class="card hill">
+        <img src="https://explorewithsandeep.com/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-20-at-22.26.46_d92206e3-768x1024.jpg" onclick="openPopup(this.src)">
+        <h3>Sinhagad Fort</h3>
+        <p><b>District:</b> Pune</p>
+        <p>Known for the bravery of Tanaji Malusare.</p>
+    </div>
+
+    <!-- Sindhudurg -->
+    <div class="card sea">
+        <img src="https://konkancrown.com/wp-content/uploads/2023/02/Sindhu-durg-fort-1.jpg" onclick="openPopup(this.src)">
+        <h3>Sindhudurg Fort</h3>
+        <p><b>District:</b> Sindhudurg</p>
+        <p>Built by Shivaji Maharaj in the Arabian Sea.</p>
+    </div>
+
+    <!-- Murud Janjira -->
+    <div class="card sea">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/7f/d3/da/murud-janjira-fort-in.jpg?w=1000&h=-1&s=1" onclick="openPopup(this.src)">
+        <h3>Murud Janjira</h3>
+        <p><b>District:</b> Raigad</p>
+        <p>One of India's strongest sea forts.</p>
+    </div>
+
+    <!-- Vijaydurg -->
+    <div class="card sea">
+        <img src="https://tourmet.com/wp-content/uploads/2014/05/vijaydurg-fort2.jpg" onclick="openPopup(this.src)">
+        <h3>Vijaydurg Fort</h3>
+        <p><b>District:</b> Sindhudurg</p>
+        <p>Known as the Gibraltar of the East.</p>
+    </div>
+
+    <!-- Raigad -->
+    <div class="card historical">
+        <img src="https://vl-prod-static.b-cdn.net/system/images/000/858/452/e4a228b33ffd2e759854be9a9947dbc3/original/Raigad_1.png" onclick="openPopup(this.src)">
+        <h3>Raigad Fort</h3>
+        <p><b>District:</b> Raigad</p>
+        <p>Capital of the Maratha Empire.</p>
+    </div>
+
+    <!-- Shivneri -->
+    <div class="card historical">
+        <img src="https://www.hindujagruti.org/wp-content/uploads/2015/02/Shivneri_640.jpg" onclick="openPopup(this.src)">
+        <h3>Shivneri Fort</h3>
+        <p><b>District:</b> Pune</p>
+        <p>Birthplace of Chhatrapati Shivaji Maharaj.</p>
+    </div>
+
+    <!-- Pratapgad -->
+    <div class="card historical">
+        <img src="https://static.wixstatic.com/media/d37a82_13e11323f9a7477fa4f6467ae8c2752e~mv2.jpg/v1/fill/w_740,h_822,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d37a82_13e11323f9a7477fa4f6467ae8c2752e~mv2.jpg" onclick="openPopup(this.src)">
+        <h3>Pratapgad Fort</h3>
+        <p><b>District:</b> Satara</p>
+        <p>Site of the famous Afzal Khan battle.</p>
+    </div>
+
+</div>
+<div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img id="popup-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
